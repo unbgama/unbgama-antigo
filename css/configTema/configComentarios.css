@@ -1,0 +1,116 @@
+ol.commentlist {}
+ol.commentlist li {
+  list-style:none;
+}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn {}
+ol.commentlist li.comment div.vcard cite.fn a.url {
+  /*Nome do Autor*/
+  color:#069;
+}
+ol.commentlist li.comment div.vcard img.avatar {}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {}
+ol.commentlist li.comment div.comment-meta a {
+  /*Data*/
+  color:#069;
+}
+ol.commentlist li.comment * {} � (p, em, strong, blockquote, ul, ol, etc.)
+ol.commentlist li.comment div.reply {}
+ol.commentlist li.comment div.reply a {
+  /*resposta*/
+  color:#069;
+}
+ol.commentlist li.comment div.reply a:hover {
+  text-decoration:underline;
+}
+/*formul�rio de resposta / comentario*/
+/*inputs*/
+#respond h3{
+  font:14px Arial, Tahoma, Verdana;
+  color:#006666;
+  font-weight:bold;
+  margin:15px 0 10px 0;
+}
+#respond input, #respond select{
+   width:250px;
+   padding:3px;
+   margin:3px;
+}
+#respond textarea{
+  padding:5px;
+  width:440px;
+  margin:3px;
+}
+/*bot�o*/
+#submit{
+  border:0;
+  background-color:#007339;
+  color:#fff;
+  height:32px;
+  cursor:pointer;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+#submit:hover{
+  background-color:#5F966A;
+}
+
+#respond input[type=submit]{
+    width:160px;
+    font-size:13px;
+}
+/*fim formulario de resposta*/
+ol.commentlist li.comment ul.children {}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {}
+ol.commentlist li.comment ul.children li.depth-3 {}
+ol.commentlist li.comment ul.children li.depth-4 {}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {}
+ol.commentlist li.odd {}
+ol.commentlist li.parent {}
+ol.commentlist li.pingback {}
+ol.commentlist li.pingback div.comment-author {}
+ol.commentlist li.pingback div.vcard {}
+ol.commentlist li.pingback div.vcard cite.fn {}
+ol.commentlist li.pingback div.vcard cite.fn a.url {}
+ol.commentlist li.pingback div.vcard span.says {}
+ol.commentlist li.pingback div.commentmetadata {}
+ol.commentlist li.pingback div.comment-meta {}
+ol.commentlist li.pingback div.comment-meta a {}
+ol.commentlist li.pingback * {} � (p, em, strong, blockquote, ul, ol, etc.)
+ol.commentlist li.pingback div.reply {}
+ol.commentlist li.pingback div.reply a {}
+ol.commentlist li.pingback ul.children {}
+ol.commentlist li.pingback ul.children li {}
+ol.commentlist li.pingback ul.children li.alt {}
+ol.commentlist li.pingback ul.children li.bypostauthor {}
+ol.commentlist li.pingback ul.children li.byuser {}
+ol.commentlist li.pingback ul.children li.comment {}
+ol.commentlist li.pingback ul.children li.comment-author-admin {}
+ol.commentlist li.pingback ul.children li.depth-2 {}
+ol.commentlist li.pingback ul.children li.depth-3 {}
+ol.commentlist li.pingback ul.children li.depth-4 {}
+ol.commentlist li.pingback ul.children li.depth-5 {}
+ol.commentlist li.pingback ul.children li.odd {}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {} 

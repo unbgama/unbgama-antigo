@@ -1,0 +1,33 @@
+#rodape{
+	text-align:center;
+	background-color:#000;
+	height:101px;
+	border-top:1px solid #fff;
+	color:#fff;
+	width:100%;
+}
+
+#rodape a{
+	color:#fff;
+}
+
+#rodape .perguntasFrequentes{
+	padding:12px;
+	border-bottom:1px solid #fff;
+}
+
+#rodape .copyright{
+	margin-top:12px;
+}
+
+#rodape span:first-child{
+	display:block;
+}
+
+#rodape img{
+	float:right;
+}
+
+#rodape span{
+	margin-top:-5px;
+}

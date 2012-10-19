@@ -1,0 +1,26 @@
+.subMenuGeral{
+	background:url(../../img/bgSMP.png);
+	height:218px;
+	position:absolute;
+	top:204px;
+	left:150px;
+	z-index:5;
+	/*invisivel provisoriamente*/
+	display:none;
+
+}
+
+#subMenu a{
+	font-family:verdana, arial, sans-serif;
+	font-size:10px;
+	color:#000;	
+}
+
+
+#subMenu h3{
+	font-family:verdana, arial, sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+	color:#ffa300;
+	margin-left:30px;
+}

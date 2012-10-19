@@ -1,0 +1,86 @@
+/*
+Theme Name: UnB Gama
+Theme URI: http://www.fga.unb.br
+Description: Tema desenvolvido e escrito em 2012 para o portal do campus do Gama da Universidade de Brasília, por alunos do curso de Graduação em Engenharia de Software da Universidade a partir da iniciativa do professor Lindomar Bomfim. Sérgio Bezerra da Silva, Ilton Garcia, Eduardo Augusto, Victor F. Borges, Victor C. Medeiros e Carlos André de Souza desde 11/2011
+Author: [Projeto Portal FGA]: Lindomar Bomfim de Carvalho
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: unb, unb gama, unbgama, gama, fga, faculdade de engenharia, engenharias, software, energia, eletrônica, automotiva, aeroespacial.
+Text Domain: unbgama
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+/*Importações Grid 960*/
+@import "css/reset.css";
+@import "css/960.css";
+@import "css/text.css";
+@import "css/fontesPersonalizadas.css";
+
+/*Configuração Gerais*/
+@import "css/configTema/configuracoesGerais.css";
+
+/*Configuração acessoRapido*/
+@import "css/configTema/acessoRapido.css";
+
+/*Submenu -[Parte do Menu Principal]*/
+@import "css/configTema/configSubMenu.css";
+
+/*Configuração Barra da Esquerda */
+@import "css/configTema/configEsquerda.css";
+
+/*Configuração banner*/
+@import "css/configTema/configBanner.css";
+
+/*Configuração menu acessibilidade*/
+@import "css/configTema/menuAcessibilidade.css";
+
+/*Configuração Barra da Direita */
+@import "css/configTema/configDireita.css";
+
+/*Configuração Redes Sociais*/
+@import "css/configTema/configRedesSocias.css";
+
+/*Configuração Coluna Central*/
+
+/*Noticia principal*/
+@import "css/configTema/noticiaPrincipal.css";
+
+/*Configuração do Rodapé [footer.php]*/
+@import "css/configTema/configRodape.css";
+
+/*Configuração da Barra Brasil*/
+@import "css/configTema/barraBrasil.css";
+
+/*Configuração da paginação da search.php*/
+@import "css/configTema/configPaginacaoSearch.css";
+
+/*Configuração da pagina 404.php*/
+@import "css/configTema/config404.css";
+
+/*Configuração da pagina que carrega o lattes dos professores*/
+@import "css/configTema/configLattesProfessores.css";
+
+/*Configuração da pagina de Comentários*/
+@import "css/configTema/configComentarios.css";
+
+/*Configuração da página graduacao.php*/
+@import "css/configTema/configPaginaGraduacao.css";
+
+/*configuração geral da single.php*/
+@import "css/configTema/configGeralSingle.css";
+
+/*configuração geral da page.php*/
+@import "css/configTema/configPage.css";
+
+/*configuração geral da archive-professores.php*/
+@import "css/configTema/configArchiveProfessores.css";
+
+/*Configuração de Brandcumbs*/
+@import "css/configTema/configBreadcrumb.css";
+
+/* colocar no arquivo correto */
+#menu-item-82 a{padding: 5px 47px;}

@@ -1,0 +1,105 @@
+/* 
+    Document   : configLattesProfessores
+    Created on : 01/09/2012, 16:32:47
+    Author     : Sergio Bezerra da Silva
+    Description:
+    Configurações de estilo referente a página do perfil dos professores.
+*/
+#informacoesProfessor{
+    background-image:url('../../img/bgFooter.png');
+    height:308px;
+    color:#000;
+}
+
+#informacoesProfessor a{
+    color:#006b2c;
+    -webkit-transition:0.2s ease-in all;
+       -moz-transition:0.2s  ease-in all;
+         -o-transition:0.2s  ease-in all;
+            transition:0.2s  ease-in all;
+}
+
+#informacoesProfessor a:hover{
+   color:#049cdb;
+   text-decoration:none;
+}
+
+.horariosProfessor{
+    text-transform:uppercase;
+}
+
+#voltaTopo{
+    position:relative;
+    top:50px;
+    left:-5px;
+    background:url('../../img/abaBalaoTopo.png');
+    width:50px;
+    height:31px;
+    border:none;
+    color:transparent;
+    cursor:pointer;
+    -webkit-transition:0.2s ease-in all;
+       -moz-transition:0.2s  ease-in all;
+         -o-transition:0.2s  ease-in all;
+            transition:0.2s  ease-in all;
+}
+
+#voltaTopo:hover{
+    background:url('../../img/abaBalaoTopoHover.png');
+}
+
+#informacoesProfessor strong, #informacoesProfessor span, #informacoesProfessor a{
+    font-size:12px;
+}
+
+.downloadEmenta{
+    color:#006b2c;
+    text-decoration:underline !important;
+}
+
+#informacoesProfessor h1{
+    font-size:23px;
+    margin-bottom:-5px;
+    margin-top:25px;
+}
+
+#infoLattes li h3{
+    text-transform:uppercase;
+    font-size:15px;
+	margin-top:25px;
+    margin-bottom:2px;
+}
+
+#infoLattes li a{
+    color:#000;
+	-webkit-transition:0.2s ease-in all;
+       -moz-transition:0.2s  ease-in all;
+         -o-transition:0.2s  ease-in all;
+            transition:0.2s  ease-in all;
+}
+
+#infoLattes li a:hover{
+	color:#049cdb;
+}
+
+
+#infoLattes li p:first-letter{
+    text-transform:uppercase !important;
+}
+
+#fotoProfessor{
+    border:8px #fff solid;
+    width:194px;
+    height:232px;
+    float:left;
+    margin:30px;
+}
+
+/*Classes de controle do jQuery*/
+.ocultar{
+    display:none;
+}
+
+.mostrar{
+    display:block;
+}

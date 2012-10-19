@@ -1,0 +1,72 @@
+.redesSociais{
+	padding-top:20px;
+}
+.redesSociais img{
+    margin-right:2px;
+}
+
+.redesSociais a{
+	text-decoration:none;
+	-webkit-transition: all ease-in-out 0.3s;
+	-moz-transition: all ease-in-out 0.3s;
+}
+.redesSociais a img:last-child{
+	margin-bottom:7px;
+}
+
+.redesSociais a div{
+	text-decoration:none;
+	-webkit-transition: all ease-in-out 0.3s;
+	-moz-transition: all ease-in-out 0.3s;
+}
+.redesSociais a img:last-child{
+	margin-bottom:7px;
+}
+
+.redesSociais a div{
+    float:left;
+    margin-right:5px;
+    margin-top:4px;
+}
+
+#facebook{
+    background:url(../../img/redesSociais.png) no-repeat -132px 0;
+    width:43px;
+    height:43px;
+}
+
+#googlePlus{
+    background: url('../../img/redesSociais.png') no-repeat -46px -44px;
+    width:43px;
+    height:43px;
+}
+
+#twitter{
+    background: url('../../img/redesSociais.png') no-repeat -88px 0;
+    width:43px;
+    height:43px;
+}
+
+#vimeo{
+    background: url('../../img/redesSociais.png') no-repeat -1px -44px;
+    width:43px;
+    height:43px;
+}
+
+#linkedin{
+    background: url('../../img/redesSociais.png') no-repeat 0 0;
+    width:43px;
+    height:43px;
+}
+
+#rss{
+    background: url('../../img/redesSociais.png') no-repeat -44px 0;
+    width:43px;
+    height:43px;
+}
+
+#flickr{
+    background: url('../../img/redesSociais.png') no-repeat  -177px 0;
+    width:43px;
+    height:43px;
+}
