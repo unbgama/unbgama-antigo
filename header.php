@@ -94,7 +94,7 @@
                     </div>
                     <div id="acessoRapido" class="grid_7">
                         <div class="previsaoTempo">
-                            <span><b>Gama</b> | 27ºC Parcialmente nublado | Umidade: 51%</span>
+                            <span><b>Gama</b> | 28ºC Pancada de chuva | Umidade: 42%</span>
                         </div>
                             
                         <div class="pesquisa">
