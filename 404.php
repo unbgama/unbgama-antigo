@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="colunaCentral" class="grid_12">
+<div id="colunaCentral" class="row">
     <section id="primary">
         <div id="erro">
             <img src="<?php bloginfo('template_directory'); ?>/img/404.jpg" title="Erro 404" alt="Erro 404">

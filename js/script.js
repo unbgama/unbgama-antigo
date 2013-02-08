@@ -48,9 +48,6 @@ $(document).ready(function() {
   
     //Remover tags 'hr' do código
     $('hr').remove('.separator');
-    
-    //Remover tags 'img' da UL cujo id="infoLattes"
-    $('a').remove('.icone-lattes');
 
     //Adicionar classe nos elementos que necessitam de display none
     $('#infoLattes li div').addClass('ocultar');
@@ -58,32 +55,78 @@ $(document).ready(function() {
     $('#formacaoAcademica div').removeClass('ocultar');
     $('#formacaoAcademica div').addClass('mostrar');
     
-    //
-   
+    //Voltar ao topo (pagina dos professores) archive-professores.php
+    $(document).ready(function(){
+        $("#voltaTopo").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#colunaCentral").offset().top
+            }, 500);
+        });
+    });
+	
+	//Mostrando e Ocultando paragrafos de informações carregadas do Curriculo Lattes
+	$(document).ready(function(){
+		$('.tabelaHorarios').hide();
+
+		$('.mostrar').click(function(event){
+			event.preventDefault();
+			$(".tabelaHorarios").show("slow");
+			$('.tituloHorariosProfessor').hide();
+		});
+
+		$('.ocultar').click(function(event){
+			event.preventDefault();
+			$(".tabelaHorarios").hide("slow");
+			$('.tituloHorariosProfessor').show("slow");
+		});
+	});
+	
+	$(document).ready(function(){
+		$('#informacaoProfessor').hide();
+
+		$('.mostrar').click(function(event){
+			event.preventDefault();
+			$("#informacaoProfessor").show("slow");
+		});
+
+		$('.ocultar').click(function(event){
+			event.preventDefault();
+			$("#informacaoProfessor").hide("slow");
+		});
+	});
+	
+	$(document).ready(function(){
+		$('#areaAtuacao').hide();
+
+		$('.mostrar').click(function(event){
+			event.preventDefault();
+			$("#areaAtuacao").show("slow");
+		});
+
+		$('.ocultar').click(function(event){
+			event.preventDefault();
+			$("areaAtuacao").hide("slow");
+		});
+	});
+	
+	$(document).ready(function(){
+		$('#projetosPesquisa').hide();
+
+		$('.mostrar').click(function(event){
+			event.preventDefault();
+			$("#projetosPesquisa").show("slow");
+		});
+
+		$('.ocultar').click(function(event){
+			event.preventDefault();
+			$("#projetosPesquisa").hide("slow");
+		});
+	});
+	
+	//Função para incluir classe no menu principal
+	$('#menu-menu-principal > li > a').addClass('span4');
 
   });
-/*jQyery de paginação*/
-jQuery.fn.extend({
-    highlight: function(search, insensitive, hls_class){
-        var regex = new RegExp("(<[^>]*>)|(\\b"+ 
-            search.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +")", insensitive ? 
-            "ig" : "g");
-        return this.html(this.html().replace(regex, function(a, b, c){
-            return (a.charAt(0) == "<") ? a : "<strong class=\""+ hls_class +"\">" + c + "</strong>";
-        }));
-    }
-});
-
-jQuery(document).ready(function($){
-    if(typeof(hls_query) != 'undefined'){
-        $("#resultadoBusca").highlight(hls_query, 1, "hls");
-    }
-});
-/* Javascript para data*/
-$('#data_1').focus(function(){
-    $(this).calendario({
-        target:'#data_1'
-    });
-});
+  
 /*Fim das funções jQuery*/
 

@@ -1,13 +1,13 @@
-﻿		</div><!-- end container12 -->
+		</div><!-- end container12 -->
 		
 <!-- Inicio do Rodape -->
-		<footer id="rodape" class="alpha grid_12 omega">
+		<footer id="rodape" class="alpha row omega">
 			<div id="endereco">
                             <!--Incluindo Google Maps-->
                             <img src="<?php bloginfo('template_directory');?>/img/maps.jpg" />
                             <span><i>Campus</i><address> Universitário Gama, Área Especial de Indústria Projeção A – UnB - Brasília - CEP: 72.444-240 - Bairro: Setor Leste (GAMA)</address></span>
                             <br />
-                            <abbr title="Telefone Geral">TG: <strong><a href="tel:31078904">+55(61)3107-8904</a></strong></abbr>
+                            <abbr title="Telefone Geral">TG: <strong><a href="tel:31078904">+55(61)3107-8901</a></strong></abbr>
 			</div><!-- end COPYRIGHT -->
                         
                         <div id="redesSociaisFooter" class="copyright">
@@ -41,10 +41,28 @@
                             <span class="textoCopyright">Copyright © 2012 Universidade de Brasília. Todos os direitos reservados.</span>
 			</div><!-- end COPYRIGHT -->
                         <div id="facebookFooter">
-                            <img src="<?php bloginfo('template_directory');?>/img/facebook.jpg" />
+                            <div id="fb-root"></div>
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=407076732691620";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
                         </div>
 		</footer><!-- end rodape -->
 	<?php wp_footer(); ?>
 	</body>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 </html>

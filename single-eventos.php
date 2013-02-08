@@ -1,9 +1,9 @@
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
-<div id="corpo" class="grid_12">
+<div id="corpo" class="row">
     <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>
-    <div id="colunaCentral" class="grid_9 omega">
+    <div id="colunaCentral" class="span9 omega">
         <div class="post">
             <div class="noticiaPrincipal">
                 <div class="infoSingle">

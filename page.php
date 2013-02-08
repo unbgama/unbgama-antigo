@@ -1,8 +1,8 @@
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
 
-<div id="colunaCentral" class="grid_9">
-    <div id="colunaEsquerda" class="grid_3 alpha">
+<div id="colunaCentral" class="span9">
+    <div id="colunaEsquerda" class="span3 alpha">
         <ul>
             <?php get_sidebar(); ?>
         </ul>

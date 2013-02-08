@@ -1,10 +1,47 @@
 <?php get_header(); ?>
 
+<div id="banner" class="row">
+    <div id="bannerImagem" class="row">
+        <?php query_posts('post_type=banners'); ?>
+        <?php if (have_posts()) while (have_posts()) : the_post(); ?>
+                <div class="slide">
+                    <?php the_post_thumbnail('tamanhoDoBanner'); ?>
+                </div>
+            <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+    </div>
+    <div id="bannerDados" class="row">
+        <?php query_posts('post_type=banners'); ?>
+        <?php if (have_posts()) while (have_posts()) : the_post(); ?>
+                <div class="slide">
+                    <div id="chamadaBanner" class="">
+                        <hgroup>
+                            <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"><?php the_field('titulo'); ?></a></h3>
+                            <h4><?php the_field('subtitulo'); ?></h4>
+                        </hgroup>
+                        <div id="dataChamadaBanner" class="span1">
+                            <span class="diaBanner">
+                                <?php
+                                $date = DateTime::createFromFormat('d/m/Y', get_field('data'));
+                                echo $date->format('d');
+                                ?>	
+                            </span>
+                            <span class="mesBanner"><?php echo $date->format('m'); ?>.<?php echo $date->format('y'); ?></span>
+                        </div>
+                            
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+    </div>
+</div><!--Fim da DIV Banner--->
+
+
 <!-- Inicio do Corpo -->
-<div id="corpo" class="grid_12">
+<div id="corpo" class="row">
     <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>
-    <div id="colunaCentral" class="grid_6">
+    <div id="colunaCentral" class="span6">
         <div class="post">
             <div class="noticiaPrincipal">
                 <?php query_posts('post_type=post&posts_per_page=1'); ?>
@@ -26,7 +63,7 @@
                 <?php wp_reset_query(); ?>
             </div>
             <div class="noticiasSecundarias">
-                <div id="noticiaEsquerda" class="grid_3 alpha">
+                <div id="noticiaEsquerda" class="span3 alpha">
                     <?php query_posts('post_type=post&posts_per_page=1&offset=1'); ?>
                     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                             <?php the_category(); ?>
@@ -35,7 +72,7 @@
                         <?php endwhile; ?>
                     <?php wp_reset_query(); ?>
                 </div>
-                <div id="noticiaDireita" class="grid_3 omega">
+                <div id="noticiaDireita" class="span3 omega">
                     <?php query_posts('post_type=post&posts_per_page=1&offset=2'); ?>
                     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                             <?php the_category(); ?>
@@ -47,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div id="colunaDireita" class="grid_3 omega">
+    <div id="colunaDireita" class="span3 omega">
         <div class="eventos">
             <h3>Eventos</h3>
             <ul>
@@ -70,9 +107,6 @@
                     <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
             </ul>
-        </div>
-        <div class="comentariosTwitter">
-            <?php //include_once 'aplicacoes/includes/twitterStyle.php';?>
         </div>
         <div class="acessosImportantes">
             <h3>Acessos Importantes</h3>

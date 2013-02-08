@@ -1,0 +1,43 @@
+/* Barra Brasil */
+
+#barra-brasil {
+    background:url("../../img/barra-brasil-v3-bgx.png") no-repeat scroll center bottom #026e30 !important;
+    overflow:hidden !important;
+    position:relative !important;
+    width:100% !important;
+    height:28px !important;
+	margin: 0 !important;
+}
+
+div.barra{
+	width:100% !important;
+	height:28px !important;
+	background: url("../../img/barra-brasil-v3-bgx.png") no-repeat left bottom;
+}
+
+div.barra ul {
+    float:right;
+    list-style-type: none;
+}
+
+#barra-brasil .barra ul li {
+    float:left;
+}
+
+#barra-brasil .ai {
+    background:url("../../img/ai.png") no-repeat scroll 0 4px #026e30;
+    display:block;
+	height:28px;
+    text-indent:-1300px;
+    width:161px;
+}
+
+#barra-brasil .brasilgov {
+    background:url("../../img/brasil.png") no-repeat scroll 0 4px #026e30;
+    display:block;
+    height:28px;
+    text-indent:-1001px;
+    width:111px;
+}
+
+/* fim da barra-Brasil */

@@ -1,4 +1,5 @@
 <?php
+//Aqui são adicionados os menus personalizados (para cada pagina um conjunto de menus diferentes)
 if (function_exists('register_sidebar')) {
     register_sidebar(array(
         'name' => 'Barra Home',
@@ -70,6 +71,36 @@ function criar_cursos() {
         'supports' => $supports,
         'has_archive' => true
             )
+    );
+}
+
+// Pagina de DISCIPLINAS
+add_action('init', 'criar_disciplinas');
+
+function criar_disciplinas() {
+    $labels = array(
+        'name' => _x('Disciplinas', 'post type general name'),
+        'singular_name' => _x('Disciplina', 'post type singular name'),
+        'add_new' => _x('Adicionar', 'disciplina'),
+        'add_new_item' => __('Adicionar nova disciplina'),
+        'edit_item' => __('Editar disciplina'),
+        'new_item' => __('Nova disciplina'),
+        'view_item' => __('Ver disciplina'),
+        'search_items' => __('Pesquisar disciplina'),
+        'not_found' => __('Nenhuma disciplina encontrada'),
+        'not_found_in_trash' => __('Nenhuma disciplina encontrada na lixeira'),
+        'parent_item_colon' => ''
+    );
+
+    $supports = array('title', 'revisions', 'thumbnail');
+    
+
+		register_post_type('disciplinas', array(
+			'labels' => $labels,
+			'public' => true,
+			'supports' => $supports,
+			'has_archive' => true,
+		)
     );
 }
 
@@ -163,7 +194,6 @@ function criar_projetos() {
 }
 
 // Pagina VIDEOS
-
 add_action('init', 'criar_videos');
 
 function criar_videos() {
@@ -190,10 +220,12 @@ function criar_videos() {
         'public' => true,
         'supports' => $supports,
         'has_archive' => true,
-	'taxonomies' => $taxonomies
+		'taxonomies' => $taxonomies
             )
     );
 }
+
+
 
 
 

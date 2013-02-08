@@ -5,13 +5,13 @@
 ?>
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
-<div id="corpo" class="grid_12">
-    <div id="colunaEsquerda" class="grid_3 alpha">
+<div id="corpo" class="row">
+    <div id="colunaEsquerda" class="span3 alpha">
         <ul>
             <?php get_sidebar(); ?>
         </ul>
     </div>
-        <div id="colunaCentral" class="grid_9 omega">
+        <div id="colunaCentral" class="span9 omega">
             <div class="post">
                 <div class="noticiaPrincipal">
                     <?php query_posts('post_type=cursos&nivel=pos-graduacao'); ?>
