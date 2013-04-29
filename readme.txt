@@ -1,3 +1,1 @@
-Tema UnB Gama Teste
-
-reset
+Tema UnB Gama
