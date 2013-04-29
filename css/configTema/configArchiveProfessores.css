@@ -1,0 +1,31 @@
+/* 
+    Document   : configArchiveProfessores
+    Created on : 14/09/2012, 17:57:27
+    Author     : Sergio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.professoresPerfil{
+    background-color:#fff;
+    border:1px #d4d4d4 solid;
+    padding-top:5px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-bottom:10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left:3px;
+    margin-bottom:6px;
+	min-height:160px;
+}
+
+
+.professoresPerfil h2{
+    color:#008d3c;
+    font-size:15px;
+}
+
+.professoresPerfil p{
+    border-bottom:none !important;
+}

@@ -1,0 +1,64 @@
+/*
+Theme Name: UnB Gama
+Theme URI: http://www.fga.unb.br
+Description: Tema desenvolvido e escrito em 2012 para o portal do campus do Gama da Universidade de Brasília, por alunos do curso de Graduação em Engenharia de Software da Universidade a partir da iniciativa do professor Lindomar Bomfim. Sérgio Bezerra da Silva, Ilton Garcia, Eduardo Augusto, Victor F. Borges, Victor C. Medeiros e Carlos André de Souza desde 11/2011
+Author: [Projeto Portal FGA]: Lindomar Bomfim de Carvalho
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: unb, unb gama, unbgama, gama, fga, faculdade de engenharia, engenharias, software, energia, eletrônica, automotiva, aeroespacial.
+Text Domain: unbgama
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+/*Importa��es Grid 960*/
+@import "css/reset.css";
+@import "css/960.css";
+@import "css/text.css";
+@import "css/fontesPersonalizadas.css";
+
+/*Configura��o Gerais*/
+@import "css/configTemaAC/configuracoesGeraisAC.css";
+
+/*Configura��o acessoRapido*/
+@import "css/configTemaAC/acessoRapidoAC.css";
+
+/*Submenu -[Parte do Menu Principal]*/
+@import "css/configTemaAC/configSubMenuAC.css";
+
+/*Configura��o Barra da Esquerda */
+@import "css/configTemaAC/configEsquerdaAC.css";
+
+/*Configura��o banner*/
+@import "css/configTemaAC/configBannerAC.css";
+
+/*Configura��o menu acessibilidade*/
+@import "css/configTemaAC/menuAcessibilidadeAC.css";
+
+/*Configura��o Barra da Direita */
+@import "css/configTemaAC/configDireitaAC.css";
+
+/*Configura��o Redes Sociais*/
+@import "css/configTemaAC/configRedesSociasAC.css";
+
+/*Configura��o Coluna Central*/
+
+
+/*Noticia principal*/
+@import "css/configTemaAC/noticiaPrincipalAC.css";
+
+/*Configura��o do Rodapé [footer.php]*/
+@import "css/configTemaAC/configRodapeAC.css";
+
+/*Configura��o da Barra Brasil*/
+@import "css/configTemaAC/barraBrasilAC.css";
+
+/*Configura��o da paginação da search.php*/
+@import "css/configTemaAC/configPaginacaoSearchAC.css";
+
+/*Configura��o da pagina 404.php*/
+@import "css/configTemaAC/config404AC.css";
+

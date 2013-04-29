@@ -1,0 +1,64 @@
+#rodape{
+	text-align:center;
+	background-image:url('../../img/bgFooter.png');
+	height:288px;
+	color:#7b7b7b;
+    width: 100%;
+}
+
+#rodape a{
+	color:#7b7b7b;
+}
+
+#rodape .perguntasFrequentes{
+}
+
+#rodape .copyright{
+}
+
+#rodape span:first-child{
+    display:block;
+}
+
+#rodape span{
+    margin-top:-5px;
+}
+
+#endereco{
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+#redesSociaisFooter{
+}
+
+footer{
+    padding-top: 20px;
+}
+
+footer h3{
+    color:#888888;
+    font-size:19px;
+    font-weight:500;
+    text-align:left;
+    margin-bottom:9px;
+    border-bottom:1px #e3e3e3 solid;
+}
+
+#redesSociaisFooter span{
+    margin-top:10px;
+}
+
+#redesSociaisFooter img{
+    display:inline-block;
+}
+
+.textoCopyright{
+    float:left;
+    display:inline-block;
+}
+
+#facebookFooter{
+}
+

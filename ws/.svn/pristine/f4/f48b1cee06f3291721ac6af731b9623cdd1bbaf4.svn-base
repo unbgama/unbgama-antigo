@@ -1,0 +1,56 @@
+<?php
+
+/** Método responsável por manipular a matriz com os dados, a coluna da matriz é a quantidade de post e as linhas são: Fonte, Horário, Remetente, Paragrafo **/
+//Array [N] [4]
+function manipulaArray(){
+	
+}//fim do método
+
+/** Método repsonsável por retornar um nome do banco de dados
+ * @param  $codigo -> código do usuário cujo o nome deve ser pesquisado **/
+function getNome( $codigo ){
+
+	//verifica a passagem do parâmetro
+	if(!$codigo) return 'Por favor informe um parametro!';
+		//throw new SoapFault('Client', 'Parâmetro não preenchido'); //lança uma exceção caso o código seja nulo.
+
+	$calc = $codigo*4;
+	return $nome = 'Ilton-Server recebeu: ' . $calc;
+	
+//	/*	
+//	//conectando ao banco de dados
+//	include 'controller/Util.php';
+//	Util::instanciaobjDB(); //instância o objeto para a conexão
+//	Util::$objDB->conecta(); //executa o método de conexão com o banco
+//	*/
+//	
+//	//conexão estruturada com o mysql
+//	$id = mysql_connect("localhost", "root", "");
+//	mysql_select_db("user");
+//	
+//	if(!$id)
+//		throw new SoapFault("Server", "Conexão não estabelecida com o banco");
+//	
+//	/*
+//	if(!Util::$objDB)
+//		throw new SoapFault("Server", "Conexão não estabelecida");
+//	*/
+//		
+//	//realiza consulta ao banco de dados
+//	$result = mysql_query("select * from usuario where id = '$codigo' ");
+//	$matriz = mysql_fetch_array($result);
+//	
+//	if($matriz == null)
+//		throw new SoapFault("Server", "Cliente não encontrado");
+//	
+//	//retorna os dados
+//	return $matriz[0];
+		
+}//fim da função getNome
+
+//instancia servidor SOAP
+$server = new SoapServer("../config/app_fga.wsdl"); //"exemplo_tirado_de_sites/tstton.wsdl" 
+$server->addFunction("getNome");
+$server->handle();
+
+?>

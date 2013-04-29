@@ -1,0 +1,55 @@
+/*Configurações de CSS para tabelas*/
+table { 
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+.tablePosGraduacao{
+	width:700px;
+	outline:1px solid #beeac6;
+}
+
+.tableLayout{
+	background-color:#edf9ef;
+	border-top:3px solid #beeac6;
+}
+
+.tableLayout tr{
+	width:233px;
+}
+
+.tableLayout td{
+	border-bottom:#fff solid 1px;
+	border-left:none;
+	border-right:none;
+}
+
+.tableLayout tbody tr td{
+    padding:6px;
+	vertical-align:middle;
+	font-size:11px;
+}
+
+.tableLayout thead tr td{
+	padding:8px;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.tableLayout thead{
+	background-color:#c9edd0;
+}
+
+.tableLayout tbody tr:hover{
+	background-color:#beeac6;
+}
+
+.tableStyleTdAlignRight{
+	text-align:right;
+}
+
+.tableStyleTdDate{
+	text-align:right;
+	font-style:italic;
+}

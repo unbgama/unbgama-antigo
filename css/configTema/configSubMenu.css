@@ -1,0 +1,23 @@
+#menu-item-84{
+    width: 193px;
+}
+
+#menu-item-84>.sub-menu{
+    padding: 10px;
+    width: 526px;
+    height: 196px;
+    background: #eee;
+    margin-top: 32px;
+    position: absolute;
+    z-index: 100;
+}
+
+#menu-item-84>.sub-menu > li{
+	float: left;
+	padding: 10px;
+	width: 150px;
+}
+
+.sub-menu li{
+    margin-left: 5px;
+}

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding = 'ISO-8859-1' ?> 
+
+<definitions name='WSFGA'
+	targetNamespace = 'urn:WSFGA'
+	xmlns:tns = 'http://example.org/WSFGA'
+	xmlns:soap = 'http://schemas.xmlsoap.org/wsdl/soap/'
+	xmlns:xsd = 'http://www.w3.org/2001/XMLSchemas'
+	xmlns:soapenc = 'http://schemas.xmlsoap.org/soap/encoding/'
+	xmlns:wsdl = 'http://schemas.xmlsoap.org/wsdl/'
+	xmlns = 'http://schemas.xmlsoap.org/wsdl/' >
+	
+	
+<message name='getNomeRequest'>
+	<part name='codigo' type='xsd:string' />
+</message>
+<message name = 'getNomeResponse'>
+	<part name='resultado' type='xsd:string' />
+</message>
+
+
+
+<portType name='WSFGAPortType'>
+	<operation name='getNome'>
+		<input message='tns:getNomeRequest' />
+		<output message='tns:getNomeResponse' />
+	</operation>
+</portType>
+
+
+
+<binding name='WSFGABinding' type='tns:WSFGAPortType'>
+	<soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' />
+	<operation name='getNome'>
+		
+		<soap:operation soapAction='urn:xmethods-delayed-WSFGA#getNome' />
+		<input>
+			<soap:body use='enconded' namespace='urn:xmethods-delayed-WSFGA'
+			encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+		</input>
+		<output>
+			<soap:body use='encoded' namespace='urn:xmethods-delayed-WSFGA' 
+			encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+		</output>
+	</operation>
+</binding>
+
+
+<service name='WSFGA-Service'>
+	<port name='WSFGAPort' binding='WSFGABinding'>
+		<soap:address location='http://localhost/AppFGA_WS/app/ws/servidor.php' />
+	</port>
+</service>
+
+</definitions>

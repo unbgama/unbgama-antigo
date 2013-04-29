@@ -1,0 +1,22 @@
+<?php
+
+include_once 'Teste_Include.php';
+
+/** Classe responsável por criar uma faxada para o cliente **/
+class ClienteFacade {
+	
+	/** Método responsável por testar o retorno **/
+	public function testeRetorno(){
+		
+	}//fim do método
+	
+}//fim da classe facade3
+
+/** Parte de configuração do servidor **/
+$server = new SoapServer(NULL, array('encoding' => 'ISO-8859-1', 'uri' => 'http://fga.unb.br/WsFGA-AppMobile/app/servidor.php'));
+//define a classe que irá responder às chamadas remotas
+$server->setClass('ClienteFacade');
+//prepara-se para receber as chamadas remotas
+$server->handle();
+
+?>
