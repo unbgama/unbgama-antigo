@@ -1,7 +1,0 @@
-<?php
-
-function testaInclude(){
-	echo 'Include do servidor funcionando!';
-}
-
-?>
