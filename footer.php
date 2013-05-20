@@ -52,7 +52,39 @@
 
 			</div> <!-- end inner -->
 		</footer><!-- end rodape -->
+
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cycle/jquery.cycle.all.latest.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cycle/js/jquery.prettyPhoto.js"></script>
+            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
+            <script>
+                if($.cookie("css")) {
+                    $("link").attr("href",$.cookie("css"));
+                }
+                $(document).ready(function() { 
+                    $("#botoesAcessibilidade ul li a").click(function() { 
+                        $("link").attr("href",$(this).attr('rel'));
+                        $.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+                        return false;
+                    });
+                    
+                    //Mostrar e ocultar div com fade
+                    $("button:first").click(function() {
+                        $("p:first").fadeToggle("slow", "linear");
+                    });
+					
+					$('#voltaTopo').click(
+						function (e) {
+							$('html, body').animate({scrollTop: '0px'}, 800);
+						}
+					);
+                });
+            </script>
 	<?php wp_footer(); ?>
 	</body>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>    
+    <!--Inclusão do Google Analytics-->
+    
+
+    
 </html>

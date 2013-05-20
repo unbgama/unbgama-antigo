@@ -6,6 +6,7 @@
     <html class="no-js"> <!--<![endif]-->
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php
             /*
              * Print the <title> tag based on what is being viewed.
@@ -27,52 +28,40 @@
                     echo ' | ' . sprintf( __( 'Pagina %s', 'twentyeleven' ), max( $paged, $page ) );
     
             ?></title>
-             <!--[if IE]><script src="<?php bloginfo('template_directory'); ?>js/modernizr.js"></script><![endif]-->
+
+            <!--Chamando meta tags do facebook-->
+            <meta property="og:title" content=""/>
+            <meta property="og:image" content="<?php bloginfo('template_directory') ?>/img/logo_simbolo.png"/>
+            <meta property="og:site_name" content="FGA - UnB Gama | O novo endereço da tecnologia"/>
+            <meta property="og:description" content="<?php bloginfo('description') ?>"/>
+            <!-- Verificação do Google Webmaster Tools -->
+            <meta name="google-site-verification" content="ECWcVLnxOQzBY0zkBbdPsbQb-MRRtrFm-E-iQKT20gQ" />
+
+            <script src="<?php bloginfo('template_directory'); ?>js/modernizr.js"></script>
             <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
             <style> article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; } </style>
-            <?php wp_head(); ?>
+            
+
+            <!-- Le Icones para diferentes dispositivos -->
+            <!-- TODO
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/img/ico/apple-touch-icon-144-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/img/ico/apple-touch-icon-114-precomposed.png">
+              <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/img/ico/apple-touch-icon-72-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/img/ico/apple-touch-icon-57-precomposed.png">
+                                           <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/ico/favicon.png">
+            -->
             <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
-            <!-- Verificação do Google Webmaster Tools -->
-			<meta name="google-site-verification" content="ECWcVLnxOQzBY0zkBbdPsbQb-MRRtrFm-E-iQKT20gQ" />
+
 			<!-- Plugin de calendário com jQuery -->
             <link href="<?php bloginfo('template_directory'); ?>/js/calendario/_style/jquery.click-calendario-1.0.css" rel="stylesheet" type="text/css"/>
             <!-- Include Cycle plugin -->
-            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
             <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cycle/prettyPhoto.css">
-            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cycle/jquery.cycle.all.latest.js"></script>
-            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cycle/js/jquery.prettyPhoto.js"></script>
-            <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
-            <script>
-                if($.cookie("css")) {
-                    $("link").attr("href",$.cookie("css"));
-                }
-                $(document).ready(function() { 
-                    $("#botoesAcessibilidade ul li a").click(function() { 
-                        $("link").attr("href",$(this).attr('rel'));
-                        $.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
-                        return false;
-                    });
-                    
-                    //Mostrar e ocultar div com fade
-                    $("button:first").click(function() {
-                        $("p:first").fadeToggle("slow", "linear");
-                    });
-					
-					$('#voltaTopo').click(
-						function (e) {
-							$('html, body').animate({scrollTop: '0px'}, 800);
-						}
-					);
-                });
-            </script>
-			<!--Chamando meta tags do facebook-->
-			<meta property="og:title" content=""/>
-			<meta property="og:image" content="<?php bloginfo('template_directory') ?>/img/logo_simbolo.png"/>
-			<meta property="og:site_name" content="FGA - UnB Gama | O novo endereço da tecnologia"/>
-			<meta property="og:description" content="<?php bloginfo('description') ?>"/>
-            <!--Inclusão do Google Analytics-->
-            <?php include_once 'aplicacoes/includes/analyticstracking.php';?>
-			
+
+            <!-- Le Bootstrap -->
+            <!--<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" /> -->
+            <!--<script href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>-->
+
+	    <?php wp_head(); ?>
         </head>
         <body>
             <div id="barra-brasil">
