@@ -3,7 +3,7 @@
 
 <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>
-    <div id="colunaCentral" class="grid_6">
+    <div id="colunaCentral" class="span6">
         <div class="post">
             <div class="noticiaPrincipal">
                 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div id="colunaDireita" class="grid_3 omega">
+    <div id="colunaDireita" class="span3 omega">
         <div class="eventos">
             <h3>Eventos</h3>
             <ul>

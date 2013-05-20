@@ -1,7 +1,7 @@
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
 
-<div id="colunaCentral" class="grid_12">
+<div id="colunaCentral" class="row">
     <div class="post">
         <div class="noticiaPrincipal">
             <?php if (have_posts()) while (have_posts()) : the_post(); ?>

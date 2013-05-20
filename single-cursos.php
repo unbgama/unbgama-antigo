@@ -1,17 +1,17 @@
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
-<div id="corpo" class="grid_12">
+<div id="corpo" class="row">
     <!--Sidebar Esquerda-->
-	<div id="banner" class="alpha grid_12 omega">
-		<div id="bannerImagemInfoSingle" class="alpha grid_12 omega">
+	<div id="banner" class="alpha row omega">
+		<div id="bannerImagemInfoSingle" class="alpha row omega">
 			<?php the_post_thumbnail('tamanhoDoBanner'); ?>
 		</div>
 	</div>
     <?php get_sidebar(); ?>
-    <div id="colunaCentral" class="alpha grid_9">
+    <div id="colunaCentral" class="alpha span9">
         <div class="post">
             <div class="noticiaPrincipal">
-            <div class="infoSingle grid_9">
+            <div class="infoSingle span9">
                 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                         <?php the_category(); ?>
                         <h1><?php the_title(); ?></h1>

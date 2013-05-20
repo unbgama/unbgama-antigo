@@ -1,4 +1,4 @@
-﻿<div id="colunaEsquerda" class="grid_3 alpha">
+﻿<div id="colunaEsquerda" class="span3 alpha">
     <?php if (is_page()) { //se for pagina 
         ?>
         <div class="subMenuPrincipal">

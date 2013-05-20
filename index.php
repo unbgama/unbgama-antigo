@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <!-- Inicio do Corpo -->
-<div id="corpo" class="grid_12">
+<div id="corpo" class="row">
     <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>
-    <div id="colunaCentral" class="grid_6">
+    <div id="colunaCentral" class="span6">
         <div class="post">
             <div class="noticiaPrincipal">
                 <?php query_posts('post_type=post&posts_per_page=1'); ?>
@@ -25,7 +25,7 @@
                 <?php wp_reset_query(); ?>
             </div>
             <div class="noticiasSecundarias">
-                <div id="noticiaEsquerda" class="grid_3 alpha">
+                <div id="noticiaEsquerda" class="span3 alpha">
                     <?php query_posts('post_type=post&posts_per_page=1&offset=1'); ?>
                     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                             <?php the_category(); ?>
@@ -34,7 +34,7 @@
                         <?php endwhile; ?>
                     <?php wp_reset_query(); ?>
                 </div>
-                <div id="noticiaDireita" class="grid_3 omega">
+                <div id="noticiaDireita" class="span3 omega">
                     <?php query_posts('post_type=post&posts_per_page=1&offset=2'); ?>
                     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                             <?php the_category(); ?>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div id="colunaDireita" class="grid_3 omega">
+    <div id="colunaDireita" class="span3 omega">
         <div class="eventos">
             <h3>Eventos</h3>
             <ul>

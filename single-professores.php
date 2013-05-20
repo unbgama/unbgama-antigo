@@ -7,13 +7,13 @@ $htmlLattes = lattesUtil::carregaLattes(the_field_lattes('curriculo_lattes'));
 <?php get_header(); ?>			
 <!-- Inicio do Corpo -->
 <div id="colunaCentral">
-    <div id="colunaEsquerda" class="grid_3 alpha">
+    <div id="colunaEsquerda" class="span3 alpha">
         <ul>
             <?php get_sidebar(); ?>
         </ul>
     </div>
     <div class="post">
-        <div class="noticiaPrincipal grid_9">
+        <div class="noticiaPrincipal span9">
             <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                     <?php if (get_field('videos')): ?>
                         <ul>

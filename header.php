@@ -35,7 +35,7 @@
             <meta property="og:site_name" content="FGA - UnB Gama | O novo endereço da tecnologia"/>
             <meta property="og:description" content="<?php bloginfo('description') ?>"/>
             <!-- Verificação do Google Webmaster Tools -->
-            <meta name="google-site-verification" content="ECWcVLnxOQzBY0zkBbdPsbQb-MRRtrFm-E-iQKT20gQ" />
+            <meta name="google-site-verification" content="MV0v8zdZxW-UTG9A3a7ARHgmk6ClB9JrO4EoVVwFZrI" />
 
             <script src="<?php bloginfo('template_directory'); ?>js/modernizr.js"></script>
             <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
@@ -58,8 +58,10 @@
             <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cycle/prettyPhoto.css">
 
             <!-- Le Bootstrap -->
-            <!--<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" /> -->
-            <!--<script href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>-->
+            <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" /> 
+            <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap-responsive.min.css" rel="stylesheet" /> 
+            <script href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+            <script href="<?php bloginfo('template_directory'); ?>/js/bootstrap-responsive.min.js"></script>
 
 	    <?php wp_head(); ?>
         </head>
@@ -73,21 +75,21 @@
                 </div>
             </div>
             <div id="barraAcessibilidadePrincipal">
-                <div class="container_12">
-                    <div class="menuAcessoRapido grid_9">
+                <div class="container">
+                    <div class="menuAcessoRapido span9">
                         <?php wp_nav_menu(array('theme_location' => 'menu-acesso-rapido')); ?>
                     </div>
                   </div>
             </div>
-            <div class="container_12">
+            <div class="container">
                 <!-- Inicio Cabecalho -->
-                <div id="cabecalho" class="grid_12">
-                    <div id="logo" class="grid_5">
+                <div id="cabecalho" class="row">
+                    <div id="logo" class="span5">
                         <a href="<?php bloginfo('url'); ?>" title="Homepage" alt="Homepage">
                             <div id="logoPortalFga"></div>
                         </a>
                     </div>
-                    <div id="acessoRapido" class="grid_7">
+                    <div id="acessoRapido" class="span7">
                         <div class="previsaoTempo" style="color: #CCC">
                         </div>
                             
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                         
-                    <div id="menuPrincipal" class="alpha grid_12 omega">
+                    <div id="menuPrincipal" class="alpha row omega">
                         <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
                     </div>
                     <!--Submenu-->
@@ -104,27 +106,27 @@
                         <ul class="subMenuGeral"></ul>
                     </div>
                     <?php if (is_home()) { //se for pagina inicial ?>
-                        <div id="banner" class="alpha grid_12 omega">
+                        <div id="banner" class="alpha row omega">
                             <?php echo get_new_royalslider(1); ?>
                         </div><!--Fim da DIV Banner--->
                     <?php }; ?>
                     <!--Inicio de Breadcrumbs--->
                     
                     <?php if (is_page()) { //se for pagina page_   ?>
-                        <div id="" class="alpha grid_12 omega"></div>
+                        <div id="" class="alpha row omega"></div>
                     <?php }; ?>
                             
                     <?php if (is_search()) { //se for pagina page_   ?>
-                        <div id="" class="alpha grid_12 omega"></div>
+                        <div id="" class="alpha row omega"></div>
                     <?php }; ?>
                             
                     <?php if (is_single()) { //se for post   ?>
-                        <div id="" class="alpha grid_12 omega">
+                        <div id="" class="alpha row omega">
                             
                         </div>
                     <?php }; ?>
                 </div>
-                <div id="breadcrumbWP" class="alpha grid_12">
+                <div id="breadcrumbWP" class="alpha row">
                     <ul class="breadcrumb">
                         <li><?php if (function_exists('bcn_display')) { bcn_display(); }?></li>
                     </ul>
