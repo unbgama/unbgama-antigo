@@ -10,13 +10,8 @@
     <?php if (is_home()) { //se for pagina inicial ou pesquisa
         ?>
         <div class="subMenuPrincipal">
-            <ul>
-                <?php wp_nav_menu(array('theme_location' => 'sub-menu-principal')); ?>
-            </ul>
+            <?php wp_nav_menu(array('theme_location' => 'sub-menu-principal')); ?>
         </div>
-        <!--
-        
-        -->
     <?php }; ?>
 
     <?php if (is_single()) { //se for post ?>

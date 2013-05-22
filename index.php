@@ -1,11 +1,18 @@
 <?php get_header(); ?>
+
+<!-- slider -->
+<div id="banner" class=" row ">
+    <?php echo get_new_royalslider(1); ?>
+</div>
 <!-- Inicio do Corpo -->
 <div id="corpo" class="row">
+
     <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>
+
+    <!-- coluna central -->
     <div id="colunaCentral" class="span6">
-        <div class="post">
-            <div class="noticiaPrincipal">
+            <div class="noticiaPrincipal row">
                 <?php query_posts('post_type=post&posts_per_page=1'); ?>
                 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
                         <?php the_category(); ?>
@@ -24,7 +31,7 @@
                     <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
             </div>
-            <div class="noticiasSecundarias">
+            <div class="noticiasSecundarias row">
                 <div id="noticiaEsquerda" class="span3 alpha">
                     <?php query_posts('post_type=post&posts_per_page=1&offset=1'); ?>
                     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
@@ -44,7 +51,6 @@
                     <?php wp_reset_query(); ?>
                 </div>
             </div>
-        </div>
     </div>
     <div id="colunaDireita" class="span3 omega">
         <div class="eventos">

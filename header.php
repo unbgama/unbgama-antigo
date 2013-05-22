@@ -89,45 +89,17 @@
                             <div id="logoPortalFga"></div>
                         </a>
                     </div>
-                    <div id="acessoRapido" class="span7">
-                        <div class="previsaoTempo" style="color: #CCC">
-                        </div>
-                            
+                    <div id="acessoRapido" class="span7">                            
                         <div class="pesquisa">
                             <?php get_search_form(); ?>
                         </div>
                     </div>
-                        
-                    <div id="menuPrincipal" class="alpha row omega">
-                        <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
-                    </div>
-                    <!--Submenu-->
-                    <div id="subMenu">
-                        <ul class="subMenuGeral"></ul>
-                    </div>
-                    <?php if (is_home()) { //se for pagina inicial ?>
-                        <div id="banner" class="alpha row omega">
-                            <?php echo get_new_royalslider(1); ?>
-                        </div><!--Fim da DIV Banner--->
-                    <?php }; ?>
-                    <!--Inicio de Breadcrumbs--->
-                    
-                    <?php if (is_page()) { //se for pagina page_   ?>
-                        <div id="" class="alpha row omega"></div>
-                    <?php }; ?>
-                            
-                    <?php if (is_search()) { //se for pagina page_   ?>
-                        <div id="" class="alpha row omega"></div>
-                    <?php }; ?>
-                            
-                    <?php if (is_single()) { //se for post   ?>
-                        <div id="" class="alpha row omega">
-                            
-                        </div>
-                    <?php }; ?>
                 </div>
-                <div id="breadcrumbWP" class="alpha row">
-                    <ul class="breadcrumb">
-                        <li><?php if (function_exists('bcn_display')) { bcn_display(); }?></li>
-                    </ul>
+                        
+                <div id="menuPrincipal" class="row">
+                    <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
+                </div>
+                <!--Submenu-->
+                <div id="subMenu">
+                    <ul class="subMenuGeral"></ul>
                 </div>

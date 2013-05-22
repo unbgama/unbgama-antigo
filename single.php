@@ -1,5 +1,12 @@
-<?php get_header(); ?>			
-<!-- Inicio do Corpo -->
+<?php get_header(); ?>	
+
+<div id="breadcrumbWP" class=" row">
+    <ul class="breadcrumb">
+        <li><?php if (function_exists('bcn_display')) { bcn_display(); }?></li>
+    </ul>
+</div>
+
+<!-- Corpo -->
 
 <!--Sidebar Esquerda-->
     <?php get_sidebar(); ?>

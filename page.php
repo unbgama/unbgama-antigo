@@ -1,6 +1,12 @@
-<?php get_header(); ?>			
-<!-- Inicio do Corpo -->
+<?php get_header(); ?>	
 
+<div id="breadcrumbWP" class=" row">
+    <ul class="breadcrumb">
+        <li><?php if (function_exists('bcn_display')) { bcn_display(); }?></li>
+    </ul>
+</div>
+
+<!-- Corpo -->
 <div id="colunaCentral" class="span9">
     <div id="colunaEsquerda" class="span3 alpha">
         <ul>
@@ -32,5 +38,5 @@
     </div>
 </div>
 <!--Sidebar Esquerda-->
-<!-- Inicio do Rodape -->
+<!-- Rodape -->
 <?php get_footer(); ?>
