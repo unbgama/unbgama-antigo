@@ -6,6 +6,6 @@
  */
 ?>
 
-<form method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>">
-    <input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e('Digite sua pesquisa', 'unbgama'); ?>" />
+<form method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>" class="form-search navbar-search pull-right visible-desktop" >
+    <input type="text" class="input-medium search-query campoPesquisa" name="s" id="s" placeholder="<?php esc_attr_e('pesquisa', 'unbgama'); ?>" />
 </form>
